@@ -80,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
               unselectedIconTheme: const IconThemeData(color: Colors.grey),
               unselectedLabelTextStyle: const TextStyle(color: Colors.grey),
               selectedIconTheme: IconThemeData(color: selectedColors[_selectedIndex]),
+              selectedLabelTextStyle: TextStyle(color: selectedColors[_selectedIndex]),
               onDestinationSelected: ((index) => {
                 setState((){
                   _selectedIndex = index;
