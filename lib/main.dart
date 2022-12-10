@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
 
   final List<Widget> views = const [
     HomeView(),
