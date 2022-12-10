@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:link_preview_generator/link_preview_generator.dart';
 import 'package:thet3o_portfolio/views/about_view.dart';
 import 'package:thet3o_portfolio/views/home_view.dart';
 import 'package:thet3o_portfolio/views/projects_view.dart';
 
-void main() {
+void main() async{
   runApp(const MyApp());
 }
 

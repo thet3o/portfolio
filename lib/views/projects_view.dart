@@ -1,4 +1,6 @@
+import 'package:any_link_preview/any_link_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:link_preview_generator/link_preview_generator.dart';
 
 class ProjectsView extends StatefulWidget{
   const ProjectsView({super.key});
@@ -9,8 +11,9 @@ class ProjectsView extends StatefulWidget{
 }
 
 class ProjectsViewState extends State<ProjectsView>{
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -21,17 +24,13 @@ class ProjectsViewState extends State<ProjectsView>{
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             textDirection: TextDirection.ltr,
-            children: const [
-              Text("This page", style: TextStyle(
-                fontSize: 50,
-                fontWeight: FontWeight.w900,
-                color: Colors.amber
-              )),
-              Text("is working in progress", style: TextStyle(
-                fontSize: 50,
-                fontWeight: FontWeight.w900,
-                color: Colors.amber
-              ))
+            children: [
+                LinkPreviewGenerator(
+                  bodyMaxLines: 3,
+                  linkPreviewStyle: LinkPreviewStyle.large,
+                  link: "https://github.com/ITIS-G-CARDANO-PAVIA/noncifregherete-game",
+                  showGraphic: true,
+                  )
             ],
           ),
         )
